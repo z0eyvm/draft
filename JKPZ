@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Website</title>
+
+    /* Style format for the whole website */
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F8F5E9; /* Earthy vintage background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #D88A59; /* Earthy orange */
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #F4E3D5;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #D88A59;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 2rem;
+        }
+
+        .portfolio img {
+            width: 100%;
+            max-width: 300px;
+            margin: 0.5rem;
+            border-radius: 8px;
+        }
+
+        .about, .services, .booking {
+            margin-bottom: 2rem;
+        }
+
+        footer {
+            background-color: #D88A59;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        form input, form select, form button {
+            display: block;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            width: 100%;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to CheyDoesNails</h1>
+    </header>
+
+    <nav>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About Me</a>
+        <a href="#services">Services</a>
+        <a href="#booking">Booking</a>
+    </nav>
+
+    <div class="container">
+        <section id="portfolio" class="portfolio">
+            <h2>Portfolio</h2>
+            <p>Explore some of my recent work:</p>
+            <div>
+                <img src="portfolio1.jpg" alt="Nail Design 1">
+                <img src="portfolio2.jpg" alt="Nail Design 2">
+                <img src="portfolio3.jpg" alt="Nail Design 3">
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p> Insert About Me Info Here with link to Instagram: <a href="https://www.instagram.com/cheydoesnails_" target="_blank">@cheydoesnails_</a>.</p>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Services</h2>
+            <p>Example: I offer a variety of nail services including:</p>
+            <ul>
+                <li>option 1</li>
+                <li>option 2</li>
+                <li>option 3</li>
+                <li>option 4</li>
+            </ul>
+            <p>Contact me for pricing and availability.</p>
+        </section>
+
+        <section id="booking" class="booking">
+            <h2>Booking</h2>
+            <p>Please fill out the form below to request a booking:</p>
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="type">Type of Nails:</label>
+                <select id="type" name="type" required>
+                    <option value="manicure">option 1</option>
+                    <option value="gel">option 2</option>
+                    <option value="acrylic">option 3</option>
+                    <option value="custom">option 4</option>
+                </select>
+
+                <button type="submit">Submit Booking</button>
+            </form>
+
+            <h3>Policies</h3>
+            <p><strong>Deposits:</strong> A deposit is required to secure your booking.</p>
+            <p><strong>Cancellations:</strong> Cancellations must be made 24 hours in advance to avoid losing your deposit.</p>
+        </section>
+    </div>
+
+    /* Copyright reservation at bottom of page if required */
+    <footer>
+        <p>Copyright &copy; 2025 CheyDoesNails. All rights reserved.</p>
+    </footer>
+</body>
+</html>
